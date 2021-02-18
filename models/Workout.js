@@ -13,10 +13,13 @@ const workoutSchema = new Schema({
             sets: Number,
             },
         ],
-        date: {
+        day: {
             type: Date,
             default: Date.now
-        }
+        },
+        totalDuration: {
+            type: Number
+        },
         
     });
 
