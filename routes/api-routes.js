@@ -23,10 +23,11 @@ module.exports = (app)=> {
         });
 });
 //     //Create workout
-    app.post("/api/workouts", (req, res) => {
-		Workout.create({})
+app.post("/api/workouts", (req, res) => {
+    Workout.create({})
         .then((result) => {
-            res.json(result)
+            console.log(result);
+            res.json(result);
         })
         .catch((err) => {
             res.json(err);
