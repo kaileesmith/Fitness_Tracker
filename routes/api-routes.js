@@ -26,7 +26,6 @@ module.exports = (app)=> {
 app.post("/api/workouts", (req, res) => {
     Workout.create({})
         .then((result) => {
-            console.log(result);
             res.json(result);
         })
         .catch((err) => {
@@ -42,7 +41,6 @@ app.post("/api/workouts", (req, res) => {
             { new: true }
         )
             .then((result) => {
-                console.log(result);
                 res.json(result);
             })
             .catch((err) => {
@@ -65,7 +63,6 @@ app.post("/api/workouts", (req, res) => {
         ])
             // .limit(7)
             .then((result) => {
-                console.log (result);
                 res.json(result);
             })
             .catch((err) => {

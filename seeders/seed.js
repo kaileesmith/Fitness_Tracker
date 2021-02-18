@@ -6,19 +6,6 @@ mongoose.connect("mongodb://localhost/workout", {
   useUnifiedTopology: true,
 });
 
-
-  // try {
-  //   mongoose.connect("mongodb://localhost/workout", {
-  //     useNewUrlParser: true,
-  //     useUnifiedTopology: true
-  //   });
-  //   console.log("MongoDB Connected...");
-  // } catch (err) {
-  //   console.error(err.message);
-  //   process.exit(1);
-  // }
-
-
 let workoutSeed = [
   {
     day: new Date(new Date().setDate(new Date().getDate() - 10)),
