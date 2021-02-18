@@ -63,8 +63,7 @@ app.post("/api/workouts", (req, res) => {
                 },
             },
         ])
-            .sort({day:-1})
-            .limit(7)
+            // .limit(7)
             .then((result) => {
                 console.log (result);
                 res.json(result);
